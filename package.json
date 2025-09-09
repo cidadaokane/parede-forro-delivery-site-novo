@@ -6,8 +6,10 @@
   "scripts": {
     "dev": "npx serve . -p 8000",
     "build": "npm run build:clean && npm run build:copy && npm run build:optimize",
+    "build:vercel": "npm run build:clean && npm run build:copy:linux && npm run build:optimize",
     "build:clean": "rimraf dist",
     "build:copy": "powershell -Command \"New-Item -ItemType Directory -Force -Path dist; Copy-Item -Path index.html,assets,public -Destination dist -Recurse -Force\"",
+    "build:copy:linux": "mkdir -p dist && cp -r index.html assets public dist/",
     "build:optimize": "npm run build:html",
     "build:html": "html-minifier --input-dir dist --output-dir dist --file-ext html --collapse-whitespace --remove-comments --minify-css --minify-js",
     "preview": "npx serve dist -p 3000",
