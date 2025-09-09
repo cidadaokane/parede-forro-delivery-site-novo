@@ -1,0 +1,37 @@
+{
+  "name": "parede-forro-delivery-site",
+  "version": "1.0.0",
+  "description": "Site da Parede & Forro Delivery - Soluções em Drywall e Gesso Acartonado",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve . -p 8000",
+    "build": "npm run build:clean && npm run build:copy && npm run build:optimize",
+    "build:clean": "rimraf dist",
+    "build:copy": "powershell -Command \"New-Item -ItemType Directory -Force -Path dist; Copy-Item -Path index.html,assets,public -Destination dist -Recurse -Force\"",
+    "build:optimize": "npm run build:html",
+    "build:html": "html-minifier --input-dir dist --output-dir dist --file-ext html --collapse-whitespace --remove-comments --minify-css --minify-js",
+    "preview": "npx serve dist -p 3000",
+    "deploy": "npm run build && npx netlify deploy --prod --dir=dist"
+  },
+  "keywords": [
+    "drywall",
+    "gesso",
+    "construção",
+    "reforma",
+    "parede",
+    "forro"
+  ],
+  "author": "Parede & Forro Delivery",
+  "license": "MIT",
+  "devDependencies": {
+    "cpx": "^1.5.0",
+    "html-minifier": "^4.0.0",
+    "imagemin": "^8.0.1",
+    "imagemin-cli": "^7.0.0",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "netlify-cli": "^17.0.0",
+    "rimraf": "^5.0.0",
+    "serve": "^14.0.0"
+  }
+}

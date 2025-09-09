@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parede & Forro Delivery - Soluções em Drywall e Gesso Acartonado</title>
+    <meta name="description" content="Especialistas em drywall e gesso acartonado. Transformamos espaços com qualidade, agilidade e o melhor custo-benefício da região.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <style>
+        /* Custom styles */
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .slide {
+            transition: opacity 1s ease-in-out;
+        }
+        .primary {
+            color: #3b82f6;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-50">
+    <!-- Header -->
+    <header id="header" class="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo e Nome -->
+                <div class="flex items-center gap-3">
+                    <img
+                        src="assets/logo.png"
+                        alt="Parede & Forro Delivery"
+                        class="h-12 w-12 rounded-lg object-cover"
+                    />
+                    <div>
+                        <h1 class="text-xl font-bold text-gray-900">
+                            Parede & Forro Delivery
+                        </h1>
+                        <p class="text-xs text-gray-600">
+                            Soluções em Drywall e Gesso
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Navigation Desktop -->
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="#inicio" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Início</a>
+                    <a href="#servicos" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Serviços</a>
+                    <a href="#sobre" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Sobre</a>
+                    <a href="#projetos" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Projetos</a>
+                    <a href="#faq" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">FAQ</a>
+                    <a href="#contato" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Contato</a>
+                </nav>
+
+                <!-- CTA Button -->
+                <a
+                    href="https://api.whatsapp.com/send/?phone=5551980416789&text=Ol%C3%A1%2C+quero+solicitar+um+or%C3%A7amento&type=phone_number&app_absent=0"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="hidden md:inline-flex bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+                >
+                    WhatsApp
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700">
+                    <i data-lucide="menu" class="h-6 w-6"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden border-t border-gray-200 py-4">
+                <nav class="flex flex-col gap-4">
+                    <a href="#inicio" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Início</a>
+                    <a href="#servicos" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Serviços</a>
+                    <a href="#sobre" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Sobre</a>
+                    <a href="#projetos" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Projetos</a>
+                    <a href="#faq" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">FAQ</a>
+                    <a href="#contato" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Contato</a>
+                    <a
+                        href="https://api.whatsapp.com/send/?phone=5551980416789&text=Ol%C3%A1%2C+quero+solicitar+um+or%C3%A7amento&type=phone_number&app_absent=0"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors text-center"
+                    >
+                        WhatsApp
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative min-h-screen flex items-center pt-20">
+        <!-- Carousel Background -->
+        <div class="absolute inset-0 z-0 overflow-hidden">
+            <div id="slide-0" class="absolute inset-0 slide opacity-100" style="background-image: url('assets/project-1.jpg'); background-size: cover; background-position: center;">
+                <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent"></div>
+            </div>
+            <div id="slide-1" class="absolute inset-0 slide opacity-0" style="background-image: url('assets/project-1.jpg'); background-size: cover; background-position: center;">
+                <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent"></div>
+            </div>
+            <div id="slide-2" class="absolute inset-0 slide opacity-0" style="background-image: url('assets/project-5.jpg'); background-size: cover; background-position: center;">
+                <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent"></div>
+            </div>
+            <div id="slide-3" class="absolute inset-0 slide opacity-0" style="background-image: url('assets/project-6.jpg'); background-size: cover; background-position: center;">
+                <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent"></div>
+            </div>
+            <div id="slide-4" class="absolute inset-0 slide opacity-0" style="background-image: url('assets/project-7.jpg'); background-size: cover; background-position: center;">
+                <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent"></div>
+            </div>
+            <div id="slide-5" class="absolute inset-0 slide opacity-0" style="background-image: url('assets/project-8.jpg'); background-size: cover; background-position: center;">
+                <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent"></div>
+            </div>
+            
+            <!-- Carousel Controls -->
+            <button id="prev-slide" class="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-white/20 hover:bg-white/30 text-white p-2 rounded-full transition-all backdrop-blur-sm" aria-label="Slide anterior">
+                <i data-lucide="chevron-left" class="h-6 w-6"></i>
+            </button>
+            <button id="next-slide" class="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-white/20 hover:bg-white/30 text-white p-2 rounded-full transition-all backdrop-blur-sm" aria-label="Próximo slide">
+                <i data-lucide="chevron-right" class="h-6 w-6"></i>
+            </button>
+            
+            <!-- Slide Indicators -->
+            <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex gap-2">
+                <button class="slide-indicator h-2 w-8 bg-white rounded-full" data-slide="0"></button>
+                <button class="slide-indicator h-2 w-2 bg-white/50 rounded-full" data-slide="1"></button>
+                <button class="slide-indicator h-2 w-2 bg-white/50 rounded-full" data-slide="2"></button>
+                <button class="slide-indicator h-2 w-2 bg-white/50 rounded-full" data-slide="3"></button>
+                <button class="slide-indicator h-2 w-2 bg-white/50 rounded-full" data-slide="4"></button>
+                <button class="slide-indicator h-2 w-2 bg-white/50 rounded-full" data-slide="5"></button>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-4xl">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
+                    Soluções Inovadoras em 
+                    <span class="primary">Drywall e Gesso Acartonado</span> 
+                    para seu Espaço
+                </h1>
+                
+                <p class="text-lg md:text-xl text-white/90 mb-8 leading-relaxed drop-shadow-md">
+                    A Parede & Forro Delivery transforma ambientes com agilidade e excelência. 
+                    Especialistas em soluções personalizadas, oferecemos desde acabamentos 
+                    diferenciados com iluminação embutida até divisões inteligentes para 
+                    espaços comerciais e residenciais.
+                </p>
+
+                <!-- Differentials -->
+                <div class="grid sm:grid-cols-2 gap-3 mb-10">
+                    <div class="flex items-center gap-2 text-white/90">
+                        <i data-lucide="check-circle" class="h-5 w-5 text-blue-500 flex-shrink-0"></i>
+                        <span class="font-medium drop-shadow">Execução limpa e rápida</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-white/90">
+                        <i data-lucide="check-circle" class="h-5 w-5 text-blue-500 flex-shrink-0"></i>
+                        <span class="font-medium drop-shadow">Ótimo custo-benefício</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-white/90">
+                        <i data-lucide="check-circle" class="h-5 w-5 text-blue-500 flex-shrink-0"></i>
+                        <span class="font-medium drop-shadow">Consultoria especializada</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-white/90">
+                        <i data-lucide="check-circle" class="h-5 w-5 text-blue-500 flex-shrink-0"></i>
+                        <span class="font-medium drop-shadow">Acabamentos diferenciados</span>
+                    </div>
+                </div>
+
+                <!-- CTAs -->
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a
+                        href="https://api.whatsapp.com/send/?phone=5551980416789&text=Ol%C3%A1%2C+quero+solicitar+um+or%C3%A7amento&type=phone_number&app_absent=0"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="group bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors inline-flex items-center justify-center"
+                    >
+                        Solicite um Orçamento Rápido
+                        <i data-lucide="arrow-right" class="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                    <a
+                        href="#servicos"
+                        class="border border-blue-500/20 hover:bg-blue-500/10 text-white px-8 py-4 rounded-lg font-semibold transition-colors inline-flex items-center justify-center"
+                    >
+                        Conheça Nossos Serviços
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Nossos Serviços
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Soluções completas em drywall e gesso acartonado para transformar 
+                    seu espaço com qualidade e eficiência
+                </p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+                <div class="card-hover bg-white border border-gray-200 rounded-xl overflow-hidden group">
+                    <div class="h-48 overflow-hidden">
+                        <img
+                            src="assets/project-contrução-em-drywall-9.jpg"
+                            alt="Quarto moderno com forro de drywall e iluminação LED embutida"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                        />
+                    </div>
+                    <div class="p-6">
+                        <div class="text-blue-600 mb-2">
+                            <i data-lucide="home" class="h-8 w-8"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                            Construção em Drywall
+                        </h3>
+                        <p class="text-gray-600">
+                            Instalação profissional de estruturas em drywall para divisão de ambientes com rapidez e qualidade.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card-hover bg-white border border-gray-200 rounded-xl overflow-hidden group">
+                    <div class="h-48 overflow-hidden">
+                        <img
+                            src="assets/project-3.jpg"
+                            alt="Iluminação Embutida"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                        />
+                    </div>
+                    <div class="p-6">
+                        <div class="text-yellow-600 mb-2">
+                            <i data-lucide="lightbulb" class="h-8 w-8"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                            Iluminação Embutida
+                        </h3>
+                        <p class="text-gray-600">
+                            Projetos com strip lights e iluminação embutida que transformam a atmosfera, criando ambientes modernos e acolhedores.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card-hover bg-white border border-gray-200 rounded-xl overflow-hidden group">
+                    <div class="h-48 overflow-hidden">
+                        <img
+                            src="assets/project-1.jpg"
+                            alt="Sancas decorativas e molduras em gesso com acabamento profissional"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                        />
+                    </div>
+                    <div class="p-6">
+                        <div class="text-green-600 mb-2">
+                            <i data-lucide="layers" class="h-8 w-8"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                            Quarto com sanca
+                        </h3>
+                        <p class="text-gray-600">
+                            Iluminação indireta maior conforto e sofisticação ao ambiente
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card-hover bg-white border border-gray-200 rounded-xl overflow-hidden group">
+                    <div class="h-48 overflow-hidden">
+                        <img
+                            src="assets/project-comerciais-kitnets-11.jpg"
+                            alt="Divisórias e estruturas em drywall para espaços comerciais"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                        />
+                    </div>
+                    <div class="p-6">
+                        <div class="text-purple-600 mb-2">
+                            <i data-lucide="building-2" class="h-8 w-8"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                            Projetos Comerciais
+                        </h3>
+                        <p class="text-gray-600">
+                            Expertise na divisão de grandes espaços, como galpões em salas comerciais, kitnets e estabelecimentos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Benefits Section -->
+            <div class="bg-white rounded-2xl p-8 md:p-12 border border-gray-200">
+                <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">
+                    Benefícios do Drywall
+                </h3>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="flex flex-col items-center text-center">
+                        <div class="text-blue-600 mb-3">
+                            <i data-lucide="zap" class="h-6 w-6"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-900 mb-2">
+                            Rapidez na Instalação
+                        </h4>
+                        <p class="text-sm text-gray-600">
+                            Economia de tempo com montagem ágil
+                        </p>
+                    </div>
+                    
+                    <div class="flex flex-col items-center text-center">
+                        <div class="text-green-600 mb-3">
+                            <i data-lucide="shield" class="h-6 w-6"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-900 mb-2">
+                            Isolamento Térmico e Acústico
+                        </h4>
+                        <p class="text-sm text-gray-600">
+                            Conforto superior com materiais especializados
+                        </p>
+                    </div>
+                    
+                    <div class="flex flex-col items-center text-center">
+                        <div class="text-purple-600 mb-3">
+                            <i data-lucide="clock" class="h-6 w-6"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-900 mb-2">
+                            Flexibilidade de Design
+                        </h4>
+                        <p class="text-sm text-gray-600">
+                            Adaptação a qualquer projeto arquitetônico
+                        </p>
+                    </div>
+                    
+                    <div class="flex flex-col items-center text-center">
+                        <div class="text-yellow-600 mb-3">
+                            <i data-lucide="dollar-sign" class="h-6 w-6"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-900 mb-2">
+                            Economia e Versatilidade
+                        </h4>
+                        <p class="text-sm text-gray-600">
+                            Melhor custo-benefício do mercado
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <!-- Content -->
+          <div>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              Sobre a Parede & Forro Delivery
+            </h2>
+            
+            <div class="mb-6">
+              <p class="text-lg text-gray-600 mb-4">
+                Sob a liderança de <span class="font-semibold text-gray-900">Tiago Fonseca</span>, 
+                somos especialistas em transformar espaços com soluções inovadoras 
+                em drywall e gesso acartonado.
+              </p>
+              <p class="text-gray-600">
+                Nossa empresa nasceu da paixão por criar ambientes funcionais e 
+                esteticamente impecáveis, sempre priorizando a satisfação do cliente 
+                e a excelência na execução.
+              </p>
+            </div>
+
+            <!-- Mission -->
+            <div class="bg-blue-50 rounded-lg p-6 mb-8">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                Nossa Missão
+              </h3>
+              <p class="text-gray-600">
+                Oferecer soluções personalizadas em drywall e gesso acartonado, 
+                garantindo qualidade, agilidade e inovação para transformar espaços 
+                residenciais e comerciais em ambientes extraordinários.
+              </p>
+            </div>
+
+            <!-- Values Grid -->
+            <div class="grid grid-cols-2 gap-4">
+              <div class="flex items-start gap-3">
+                <div class="text-blue-600 mt-1">
+                  <i data-lucide="target" class="h-6 w-6"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-1">Agilidade</h4>
+                  <p class="text-sm text-gray-600">Entrega rápida e eficiente em todos os projetos</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="text-blue-600 mt-1">
+                  <i data-lucide="heart" class="h-6 w-6"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-1">Qualidade</h4>
+                  <p class="text-sm text-gray-600">Excelência em cada detalhe do acabamento</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="text-blue-600 mt-1">
+                  <i data-lucide="award" class="h-6 w-6"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-1">Inovação</h4>
+                  <p class="text-sm text-gray-600">Soluções criativas e modernas para seu espaço</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="text-blue-600 mt-1">
+                  <i data-lucide="users" class="h-6 w-6"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-1">Consultoria</h4>
+                  <p class="text-sm text-gray-600">Orientação especializada em cada etapa</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Image -->
+          <div class="relative">
+            <img
+              src="assets/project-6.jpg"
+              alt="Equipe Parede & Forro Delivery"
+              class="rounded-2xl shadow-2xl w-full"
+            />
+            <div class="absolute -bottom-6 -left-6 bg-blue-600 text-white rounded-lg p-6 shadow-xl">
+              <div class="text-3xl font-bold">10+</div>
+              <div class="text-sm">Anos de Experiência</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Differentials -->
+        <div class="mt-16 bg-gray-100 rounded-2xl p-8 md:p-12">
+          <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">
+            Nossos Diferenciais
+          </h3>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-white rounded-lg p-6">
+              <h4 class="font-semibold text-gray-900 mb-2">
+                Execução Limpa e Rápida
+              </h4>
+              <p class="text-gray-600">
+                Processo otimizado para garantir um canteiro organizado e 
+                conclusão no menor tempo possível.
+              </p>
+            </div>
+            <div class="bg-white rounded-lg p-6">
+              <h4 class="font-semibold text-gray-900 mb-2">
+                Ótimo Custo-Benefício
+              </h4>
+              <p class="text-gray-600">
+                Soluções inteligentes que se encaixam no seu orçamento, 
+                sem abrir mão da qualidade.
+              </p>
+            </div>
+            <div class="bg-white rounded-lg p-6">
+              <h4 class="font-semibold text-gray-900 mb-2">
+                Fornecemos Insights
+              </h4>
+              <p class="text-gray-600">
+                Consultoria e ideias criativas para maximizar o potencial 
+                do seu espaço com iluminação e design.
+              </p>
+            </div>
+            <div class="bg-white rounded-lg p-6">
+              <h4 class="font-semibold text-gray-900 mb-2">
+                Agilidade no Atendimento
+              </h4>
+              <p class="text-gray-600">
+                Resposta rápida e atendimento personalizado do início ao 
+                fim do projeto.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projetos" class="py-20 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Projetos Realizados
+          </h2>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
+            Conheça alguns dos nossos trabalhos e veja como transformamos 
+            espaços com excelência e criatividade
+          </p>
+
+
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6" id="projects-grid">
+          <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group" data-category="residencial">
+            <div class="aspect-square overflow-hidden">
+              <img
+                src="assets/project-contrução-em-drywall-9.jpg"
+                alt="Construção em Drywall com Nichos"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900 mb-1">
+                Divisórias e Repartições
+              </h3>
+              <p class="text-sm text-gray-600">
+                Projeto comercial com divisórias e repartições em Drywall
+              </p>
+            </div>
+          </div>
+
+          <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group" data-category="comercial">
+            <div class="aspect-square overflow-hidden">
+              <img
+                src="assets/project-1.jpg"
+                alt="Acabamento Premium"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900 mb-1">
+                Quarto com sanca
+              </h3>
+              <p class="text-sm text-gray-600">
+                ideal para iluminação indireta promovendo sensação de relaxamento
+              </p>
+            </div>
+          </div>
+
+          <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group" data-category="comercial">
+            <div class="aspect-square overflow-hidden">
+              <img
+                src="assets/project-3.jpg"
+                alt="Corredor Corporativo"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900 mb-1">
+                Corredor Corporativo
+              </h3>
+              <p class="text-sm text-gray-600">
+                Divisórias e acabamentos modernos
+              </p>
+            </div>
+          </div>
+
+          <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group" data-category="residencial">
+            <div class="aspect-square overflow-hidden">
+              <img
+                src="assets/project-4.jpg"
+                alt="Forro com Iluminação LED Geométrica"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900 mb-1">
+                Forro LED Geométrico
+              </h3>
+              <p class="text-sm text-gray-600">
+                Design profissional com iluminação LED geométrica integrada
+              </p>
+            </div>
+          </div>
+
+          <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group" data-category="comercial">
+            <div class="aspect-square overflow-hidden">
+              <img
+                src="assets/project-5.jpg"
+                alt="Estrutura Comercial"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900 mb-1">
+                Estrutura Comercial
+              </h3>
+              <p class="text-sm text-gray-600">
+                Construção para espaço comercial
+              </p>
+            </div>
+          </div>
+
+          <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group" data-category="residencial">
+            <div class="aspect-square overflow-hidden">
+              <img
+                src="assets/project-6.jpg"
+                alt="Parede Decorativa"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900 mb-1">
+                Parede Decorativa
+              </h3>
+              <p class="text-sm text-gray-600">
+                Iluminação decorativa diferenciada
+              </p>
+            </div>
+          </div>
+
+          <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group" data-category="comercial">
+            <div class="aspect-square overflow-hidden">
+              <img
+                src="assets/project-7.jpg"
+                alt="Forro Linear LED"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900 mb-1">
+                Forro Linear LED
+              </h3>
+              <p class="text-sm text-gray-600">
+                Iluminação linear corporativa
+              </p>
+            </div>
+          </div>
+
+          <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group" data-category="comercial">
+            <div class="aspect-square overflow-hidden">
+              <img
+                src="assets/project-8.jpg"
+                alt="Sala de Reunião"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900 mb-1">
+                Sala de Reunião
+              </h3>
+              <p class="text-sm text-gray-600">
+                Design exclusivo com LED
+              </p>
+            </div>
+          </div>
+
+          <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group" data-category="residencial">
+            <div class="aspect-square overflow-hidden">
+              <img
+                src="assets/project-sala de reuniao12.jpg"
+                alt="Acabamento Premium"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900 mb-1">
+                Acabamento Premium
+              </h3>
+              <p class="text-sm text-gray-600">
+                Trabalho detalhado em drywall
+              </p>
+            </div>
+          </div>
+
+          <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group" data-category="residencial">
+            <div class="aspect-square overflow-hidden">
+              <img
+                src="assets/project-acabamento-premium-2.jpg"
+                alt="Sistema de Iluminação"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900 mb-1">
+                Sistema de Iluminação
+              </h3>
+              <p class="text-sm text-gray-600">
+                Iluminação embutida moderna
+              </p>
+            </div>
+          </div>
+
+          <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group" data-category="comercial">
+            <div class="aspect-square overflow-hidden">
+              <img
+                src="assets/project -profissional-10.jpg"
+                alt="Projeto Profissional"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900 mb-1">
+                Projeto Profissional
+              </h3>
+              <p class="text-sm text-gray-600">
+                Execução técnica especializada
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="text-center mt-12">
+          <button
+            class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold text-lg transition-colors"
+            onclick="window.open('https://api.whatsapp.com/send/?phone=5551980416789&text=Ol%C3%A1%2C+quero+solicitar+um+or%C3%A7amento&type=phone_number&app_absent=0', '_blank')"
+          >
+            Quero um Projeto Como Esses
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-white">
+      <div class="container mx-auto px-4 max-w-4xl">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Perguntas Frequentes
+          </h2>
+          <p class="text-lg text-gray-600">
+            Tire suas dúvidas sobre drywall e nossos serviços
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <div class="faq-item bg-gray-50 rounded-lg px-6 border-none">
+            <button class="faq-trigger w-full text-left py-6 flex justify-between items-center">
+              <span class="text-gray-900 font-medium pr-4">
+                É possível utilizar drywall em ambientes com umidade, como banheiros?
+              </span>
+              <i data-lucide="chevron-down" class="h-5 w-5 text-gray-500 transition-transform"></i>
+            </button>
+            <div class="faq-content hidden text-gray-600 pb-6">
+              Sim, é totalmente possível! Utilizamos chapas especiais anti-mofo, desenvolvidas para ambientes com umidade. Importante ressaltar que não são indicadas para incidência direta de água (dentro do box do chuveiro, por exemplo), mas são perfeitas para bancadas, paredes de banheiros e áreas de serviço, garantindo durabilidade e segurança.
+            </div>
+          </div>
+
+          <div class="faq-item bg-gray-50 rounded-lg px-6 border-none">
+            <button class="faq-trigger w-full text-left py-6 flex justify-between items-center">
+              <span class="text-gray-900 font-medium pr-4">
+                Posso fixar objetos nas paredes de drywall, como quadros e luminárias?
+              </span>
+              <i data-lucide="chevron-down" class="h-5 w-5 text-gray-500 transition-transform"></i>
+            </button>
+            <div class="faq-content hidden text-gray-600 pb-6">
+              Com certeza! É possível fixar quadros, televisores, luminárias e outros objetos. Para itens mais pesados, como armários suspensos ou suportes de TV, planejamos previamente o reforço interno da estrutura da parede, garantindo total segurança e estabilidade. Basta nos informar suas necessidades no projeto!
+            </div>
+          </div>
+
+          <div class="faq-item bg-gray-50 rounded-lg px-6 border-none">
+            <button class="faq-trigger w-full text-left py-6 flex justify-between items-center">
+              <span class="text-gray-900 font-medium pr-4">
+                O drywall oferece conforto acústico e térmico?
+              </span>
+              <i data-lucide="chevron-down" class="h-5 w-5 text-gray-500 transition-transform"></i>
+            </button>
+            <div class="faq-content hidden text-gray-600 pb-6">
+              Sim, e com excelente desempenho! Através do uso de mantas específicas (lã de vidro, lã de rocha) e técnicas de instalação, as paredes e forros de drywall podem oferecer um isolamento térmico e acústico até mesmo superior ao da alvenaria convencional. Tudo depende das demandas específicas do cliente e das especificações técnicas do projeto, que personalizamos para você.
+            </div>
+          </div>
+
+          <div class="faq-item bg-gray-50 rounded-lg px-6 border-none">
+            <button class="faq-trigger w-full text-left py-6 flex justify-between items-center">
+              <span class="text-gray-900 font-medium pr-4">
+                O drywall é uma boa opção para espaços alugados?
+              </span>
+              <i data-lucide="chevron-down" class="h-5 w-5 text-gray-500 transition-transform"></i>
+            </button>
+            <div class="faq-content hidden text-gray-600 pb-6">
+              Absolutamente! O drywall é uma solução ideal para espaços locados. Sua instalação causa um impacto mínimo no imóvel, é rápida e, o mais importante, pode ser removida no final do contrato de locação com pouquíssimos resíduos ou danos à estrutura original. É a flexibilidade que você precisa para personalizar sem preocupações.
+            </div>
+          </div>
+
+          <div class="faq-item bg-gray-50 rounded-lg px-6 border-none">
+            <button class="faq-trigger w-full text-left py-6 flex justify-between items-center">
+              <span class="text-gray-900 font-medium pr-4">
+                Qual o tempo médio para a execução de um projeto de drywall?
+              </span>
+              <i data-lucide="chevron-down" class="h-5 w-5 text-gray-500 transition-transform"></i>
+            </button>
+            <div class="faq-content hidden text-gray-600 pb-6">
+              O tempo varia conforme o tamanho e complexidade do projeto. Para uma divisória simples, podemos concluir em 1-2 dias. Projetos maiores, como forros com iluminação embutida ou divisão de galpões, podem levar de 3 a 10 dias. Sempre fornecemos um cronograma detalhado no orçamento.
+            </div>
+          </div>
+
+          <div class="faq-item bg-gray-50 rounded-lg px-6 border-none">
+            <button class="faq-trigger w-full text-left py-6 flex justify-between items-center">
+              <span class="text-gray-900 font-medium pr-4">
+                Como é feito o orçamento de um serviço de drywall?
+              </span>
+              <i data-lucide="chevron-down" class="h-5 w-5 text-gray-500 transition-transform"></i>
+            </button>
+            <div class="faq-content hidden text-gray-600 pb-6">
+              Realizamos uma visita técnica gratuita para avaliar o espaço e entender suas necessidades. O orçamento considera: metragem, tipo de chapa necessária, complexidade do projeto, acabamentos desejados e prazo de execução. Tudo é detalhado e transparente, sem surpresas.
+            </div>
+          </div>
+
+          <div class="faq-item bg-gray-50 rounded-lg px-6 border-none">
+            <button class="faq-trigger w-full text-left py-6 flex justify-between items-center">
+              <span class="text-gray-900 font-medium pr-4">
+                O drywall gera muita sujeira durante a instalação?
+              </span>
+              <i data-lucide="chevron-down" class="h-5 w-5 text-gray-500 transition-transform"></i>
+            </button>
+            <div class="faq-content hidden text-gray-600 pb-6">
+              Não! Uma das grandes vantagens do drywall é a instalação limpa. Diferente da alvenaria tradicional, não há necessidade de quebrar paredes, usar água ou gerar entulho. A montagem é seca e organizada, com mínima geração de poeira, que é facilmente controlada com nossos equipamentos.
+            </div>
+          </div>
+
+          <div class="faq-item bg-gray-50 rounded-lg px-6 border-none">
+            <button class="faq-trigger w-full text-left py-6 flex justify-between items-center">
+              <span class="text-gray-900 font-medium pr-4">
+                Qual a durabilidade de uma parede ou forro de drywall?
+              </span>
+              <i data-lucide="chevron-down" class="h-5 w-5 text-gray-500 transition-transform"></i>
+            </button>
+            <div class="faq-content hidden text-gray-600 pb-6">
+              Com a instalação correta e manutenção adequada, estruturas de drywall podem durar décadas. O material é resistente e, em caso de danos pontuais (como furos ou amassados), o reparo é simples e rápido, sem necessidade de grandes reformas.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="py-20 bg-gray-900 text-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            Entre em Contato
+          </h2>
+          <p class="text-gray-300 max-w-2xl mx-auto">
+            Pronto para transformar seu espaço? Entre em contato conosco e solicite seu orçamento gratuito
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-4 gap-8">
+          <!-- Company Info -->
+          <div>
+            <div class="flex items-center gap-2 mb-4">
+              <div class="w-8 h-8 bg-blue-600 rounded flex items-center justify-center">
+                <i data-lucide="home" class="h-5 w-5 text-white"></i>
+              </div>
+              <span class="text-xl font-bold">Parede & Forro Delivery</span>
+            </div>
+            <p class="text-gray-400 mb-4">
+              Transformamos espaços com qualidade, agilidade e o melhor custo-benefício da região.
+            </p>
+            
+            <!-- Horário de Atendimento -->
+            <div class="bg-gray-800 rounded-lg p-4 mt-6">
+              <h4 class="text-white font-semibold mb-3">Horário de Atendimento</h4>
+              <div class="text-gray-300 space-y-2 text-sm">
+                <p>Segunda a Sexta: 8h às 18h</p>
+                <p>Sábado: 8h às 12h</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Links Rápidos</h3>
+            <ul class="space-y-2">
+              <li><a href="#inicio" class="text-gray-400 hover:text-white transition-colors">Início</a></li>
+              <li><a href="#servicos" class="text-gray-400 hover:text-white transition-colors">Serviços</a></li>
+              <li><a href="#sobre" class="text-gray-400 hover:text-white transition-colors">Sobre</a></li>
+              <li><a href="#projetos" class="text-gray-400 hover:text-white transition-colors">Projetos</a></li>
+              <li><a href="#faq" class="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
+              <li><a href="#contato" class="text-gray-400 hover:text-white transition-colors">Contato</a></li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Serviços</h3>
+            <ul class="space-y-2 text-gray-400">
+              <li>Construção em Drywall</li>
+              <li>Iluminação Embutida</li>
+              <li>Forros e Sancas</li>
+              <li>Isolamento Acústico</li>
+              <li>Reparos e Manutenção</li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Contato</h3>
+            <div class="space-y-3">
+              <div class="flex items-center gap-2">
+                <i data-lucide="message-circle" class="h-4 w-4 text-green-400"></i>
+                <a href="https://api.whatsapp.com/send/?phone=5551980416789&text=Ol%C3%A1%2C+quero+solicitar+um+or%C3%A7amento&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">(51) 98041-6789</a>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="instagram" class="h-4 w-4 text-pink-400"></i>
+                <a href="https://www.instagram.com/paredeeforro/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">@paredeeforro</a>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="facebook" class="h-4 w-4 text-blue-400"></i>
+                <a href="https://www.facebook.com/profile.php?id=61578133163187&sk=about_contact_and_basic_info" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">Parede & Forro Delivery</a>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="map-pin" class="h-4 w-4 text-red-400"></i>
+                <span class="text-gray-400">Porto Alegre e Região</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <p class="text-gray-400 text-sm">
+            © 2024 Parede & Forro Delivery. Todos os direitos reservados.
+          </p>
+          <p class="text-gray-500 text-xs mt-2 md:mt-0">
+            Desenvolvido com ❤️ para transformar espaços
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Carousel functionality
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const indicators = document.querySelectorAll('.slide-indicator');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.opacity = i === index ? '1' : '0';
+            });
+            
+            indicators.forEach((indicator, i) => {
+                if (i === index) {
+                    indicator.classList.remove('w-2', 'bg-white/50');
+                    indicator.classList.add('w-8', 'bg-white');
+                } else {
+                    indicator.classList.remove('w-8', 'bg-white');
+                    indicator.classList.add('w-2', 'bg-white/50');
+                }
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        // Event listeners
+        document.getElementById('next-slide').addEventListener('click', nextSlide);
+        document.getElementById('prev-slide').addEventListener('click', prevSlide);
+        
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => {
+                currentSlide = index;
+                showSlide(currentSlide);
+            });
+        });
+
+        // Auto-play carousel
+        setInterval(nextSlide, 5000);
+
+        // Project filter functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active button
+                filterBtns.forEach(b => {
+                    b.classList.remove('active', 'bg-blue-600', 'text-white');
+                    b.classList.add('bg-white', 'text-gray-700', 'border', 'border-gray-300');
+                });
+                btn.classList.add('active', 'bg-blue-600', 'text-white');
+                btn.classList.remove('bg-white', 'text-gray-700', 'border', 'border-gray-300');
+
+                // Filter projects
+                const filter = btn.getAttribute('data-filter');
+                projectCards.forEach(card => {
+                    if (filter === 'todos' || card.getAttribute('data-category') === filter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+         // FAQ accordion functionality
+         const faqTriggers = document.querySelectorAll('.faq-trigger');
+         faqTriggers.forEach(trigger => {
+             trigger.addEventListener('click', () => {
+                 const content = trigger.nextElementSibling;
+                 const icon = trigger.querySelector('[data-lucide="chevron-down"]');
+                 
+                 // Close all other FAQ items
+                 faqTriggers.forEach(otherTrigger => {
+                     if (otherTrigger !== trigger) {
+                         const otherContent = otherTrigger.nextElementSibling;
+                         const otherIcon = otherTrigger.querySelector('[data-lucide="chevron-down"]');
+                         otherContent.classList.add('hidden');
+                         otherIcon.style.transform = 'rotate(0deg)';
+                     }
+                 });
+                 
+                 // Toggle current FAQ item
+                 content.classList.toggle('hidden');
+                 if (content.classList.contains('hidden')) {
+                     icon.style.transform = 'rotate(0deg)';
+                 } else {
+                     icon.style.transform = 'rotate(180deg)';
+                 }
+             });
+         });
+
+         // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
